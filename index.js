@@ -17,7 +17,7 @@ function markdownitLinkifyImages (md, config) {
     if (token.attrIndex('title') !== -1) {
       title = ' title="' + md.utils.escapeHtml(token.attrs[token.attrIndex('title')][1]) + '"'
     }
-
+    console.log('forwarded-image:', window.location.href);
     return '' +
       '<a href="' + url + '"' + linkClass + target + '>' +
         '<img src="' + url + '" alt="' + caption + '"' + imgClass + title + '>' +

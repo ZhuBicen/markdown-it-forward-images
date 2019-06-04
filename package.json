@@ -1,17 +1,17 @@
 {
-  "name": "markdown-it-linkify-images",
-  "version": "1.1.1",
-  "description": "A markdown-it plugin to add links to images",
+  "name": "markdown-it-forwarded-images",
+  "version": "1.1.2",
+  "description": "A markdown-it plugin to forward the image to another link",
   "main": "index.js",
   "scripts": {
     "build": "node tasks/build.js && npm run minify",
-    "minify": "uglifyjs dist/markdown-it-linkify-images.js > dist/markdown-it-linkify-images.min.js",
+    "minify": "uglifyjs dist/markdown-it-forward-images.js > dist/markdown-it-forward-images.min.js",
     "lint": "standard | snazzy",
     "test": "npm run lint && mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crookedneighbor/markdown-it-linkify-images.git"
+    "url": "git+https://github.com/ZhuBicen/markdown-it-forward-images.git"
   },
   "keywords": [
     "markdown-it",
@@ -22,9 +22,9 @@
   "author": "Blade Barringer <blade@crookedneighbor.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/crookedneighbor/markdown-it-linkify-images/issues"
+    "url": "https://github.com/ZhuBicen/markdown-it-forward-images.git/issues"
   },
-  "homepage": "https://github.com/crookedneighbor/markdown-it-linkify-images#readme",
+  "homepage": "https://github.com/ZhuBicen/markdown-it-forward-images.git#readme",
   "devDependencies": {
     "browserify": "^16.2.0",
     "chai": "^4.1.1",
@@ -55,6 +55,6 @@
     ]
   },
   "dependencies": {
-    "markdown-it": "^8.4.2"
+    "markdown-it": "^8.4.1"
   }
 }
